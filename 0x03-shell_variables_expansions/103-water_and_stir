@@ -1,0 +1,4 @@
+#!/bin/bash
+w=$(echo "$WATER" | tr -d '.' | tr 'water' '01234')
+s=$(echo "$STIR" | tr -d '.' | tr 'stir' '0123')
+echo $((w + s)) | tr '01234567' 'bestchol'
